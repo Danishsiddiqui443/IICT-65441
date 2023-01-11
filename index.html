@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <form id="login-form" onsubmit="return validateform()">
+        <h1>Login Form</h1>
+        <div class="formcontainer">
+        <hr/>
+        <div class="container">
+          <label for="uname"><strong>Username</strong></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+          <label for="psw"><strong>Password</strong></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+        </div>
+        <input type="submit" id="login-form-submit" value="Login" />
+      </form>
+      
+      <p id="login-error-msg">Invalid username and/or password</p>
+      <h1 id="login-success-msg">User Logged in successfully</span></p>
+
+      <script src="./script.js"></script>
+  </body>
+</html>
